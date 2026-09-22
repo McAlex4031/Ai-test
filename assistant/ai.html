@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Assistant IA — ATOMIA</title>
+
+    <link rel="stylesheet" href="ai.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="../index.html" class="back-button">←</a>
+
+        <div class="header-title">
+            <span>ATOMIA ⚛️</span>
+            <small>Assistant scientifique</small>
+        </div>
+    </header>
+
+
+    <main class="assistant">
+
+        <!-- Écran de chargement -->
+        <section id="loading-screen" class="loading-screen">
+
+            <div class="ai-icon">🤖</div>
+
+            <h1>Assistant ATOMIA</h1>
+
+            <p id="loading-text">
+                Préparation de l'intelligence artificielle…
+            </p>
+
+            <div class="progress-container">
+                <div id="progress-bar" class="progress-bar"></div>
+            </div>
+
+            <p id="progress-text">0 %</p>
+
+        </section>
+
+
+        <!-- Interface de discussion -->
+        <section id="chat-screen" class="chat-screen hidden">
+
+            <div id="messages" class="messages">
+
+                <div class="message ai-message">
+                    <div class="message-name">🤖 Assistant ATOMIA</div>
+
+                    <div class="message-content">
+                        Bonjour ! Je suis l'assistant scientifique
+                        d'ATOMIA. Pose-moi une question sur la chimie.
+                    </div>
+                </div>
+
+            </div>
+
+
+            <form id="chat-form" class="chat-form">
+
+                <input
+                    id="question-input"
+                    type="text"
+                    placeholder="Posez votre question…"
+                    autocomplete="off"
+                >
+
+                <button type="submit" aria-label="Envoyer">
+                    ➤
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <script src="ai.js"></script>
+
+</body>
+</html
